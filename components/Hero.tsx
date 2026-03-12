@@ -10,8 +10,11 @@ export default function Hero() {
       <div className="max-w-5xl w-full flex flex-col items-center text-center space-y-6">
         
         {/* 🔥 Обновленный бейдж профессии */}
+        
+
+       {/* Бейдж профессии */}
         <div className="px-6 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-sm font-semibold tracking-widest uppercase text-orange-400">
-          Software & AI Architect
+          IT-решения для бизнеса
         </div>
 
         {/* Главный заголовок */}
@@ -22,11 +25,10 @@ export default function Hero() {
           </span>
         </h1>
 
-        {/* 🔥 Обновленное описание (продающее твою универсальность) */}
+        {/* ПРОСТОЕ И ПРОДАЮЩЕЕ ОПИСАНИЕ */}
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl font-medium mt-6">
-          Разрабатываю IT-продукты полного цикла: от мобильных приложений и B2B-веб-платформ до высоконагруженных микросервисов и интеграции ИИ.
+          Разрабатываю премиальные сайты, мобильные приложения и умных ИИ-ботов, которые приводят клиентов и автоматизируют вашу работу.
         </p>
-
         {/* Кнопки действия */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 mt-10 w-full">
           <a href="#projects" className="px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 text-center">
