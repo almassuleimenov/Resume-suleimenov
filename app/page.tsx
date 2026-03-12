@@ -1,17 +1,25 @@
-import Hero from "@/components/Hero";
-import Philosophy from "@/components/Philosophy";
-import Projects from "@/components/Projects";
-import Services from "@/components/Services";
-import Footer from "@/components/Footer";
+// Если используешь какие-то хуки прямо тут, оставь "use client", если нет - можно убрать
+import React from 'react';
+import Hero from '@/components/Hero';
+import Philosophy from '@/components/Philosophy';
+import Services from '@/components/Services';
+import Projects from '@/components/Projects';
+import Footer from '@/components/Footer';
+
+// 🔥 ГЛАВНЫЙ ИМПОРТ ПРОВАЙДЕРА
+import { LanguageProvider } from '@/context/LanguageContext'; 
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center w-full min-h-screen">
-      <Hero />
-      <Philosophy /> 
-      <Projects />
-      <Services />
-      <Footer />
-    </main>
+    // 🔥 ОБЕРТЫВАЕМ ВЕСЬ САЙТ В ПРОВАЙДЕР
+    <LanguageProvider>
+      <main className="min-h-screen bg-black text-white selection:bg-orange-500/30">
+        <Hero />
+        <Philosophy />
+        <Services />
+        <Projects />
+        <Footer />
+      </main>
+    </LanguageProvider>
   );
 }
